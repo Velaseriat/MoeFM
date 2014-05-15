@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6" >
+
+        <WebView
+            android:id="@+id/artworkView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+   <TableLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dip"
+       android:layout_marginTop="15dip"
+       android:orientation="vertical"
+       android:layout_weight="0.5" >
+        
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/titleLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/title"
+                android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8" />
+
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+	        <TextView
+	            android:id="@+id/artistLabel"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/artist"
+	            android:layout_weight="0.2" />
+
+	        <TextView
+	            android:id="@+id/artistText"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="0.8" />
+	        
+	    </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+	        
+            <TextView
+            	android:id="@+id/albumLabel"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/album"
+            	android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/albumText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8" />
+	        
+        </TableRow>
+	        
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+            <TextView
+            	android:id="@+id/yearLabel"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/year"
+            	android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/yearText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8" />
+	        
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            
+        	<TextView
+            	android:id="@+id/genreLabel"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/genre"
+            	android:layout_weight="0.2" />
+
+        	<TextView
+        	    android:id="@+id/genreText"
+        	    android:layout_width="wrap_content"
+        	    android:layout_height="wrap_content"
+        	    android:layout_weight="0.8" />
+	        
+        </TableRow>
+            
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        	
+            <TextView
+            	android:id="@+id/filenameLabel"
+            	android:layout_width="wrap_content"
+            	android:layout_height="wrap_content"
+            	android:text="@string/file"
+            	android:layout_weight="0.2" />
+
+            <TextView
+                android:id="@+id/fileText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8" />
+	        
+        </TableRow>
+           
+    </TableLayout>
+
+   <TableRow
+       android:id="@+id/tableRow7"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" >
+
+       <Button
+           android:id="@+id/playButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.33"
+           android:text="@string/play"
+           android:onClick="play" />
+
+       <Button
+           android:id="@+id/saveButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.33"
+           android:text="@string/save"
+           android:onClick="save" />
+
+       <Button
+           android:id="@+id/nextButton"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_weight="0.33"
+           android:text="@string/next"
+           android:onClick="next" />
+
+   </TableRow>
+
+</LinearLayout>
